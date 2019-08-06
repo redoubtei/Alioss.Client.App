@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Services", "03.Services"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alioss.Client.App", "Alioss.Client.App\Alioss.Client.App.csproj", "{A7F40E10-FC8E-4D2A-A287-DCB62D5A9FD0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{0CB98EFA-D076-46E7-A1EA-2BD63A6E878C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alioss.Client.Skin", "Alioss.Client.Skin\Alioss.Client.Skin.csproj", "{C3766676-D452-4475-9D67-323B4159AF56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,12 +25,18 @@ Global
 		{A7F40E10-FC8E-4D2A-A287-DCB62D5A9FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7F40E10-FC8E-4D2A-A287-DCB62D5A9FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7F40E10-FC8E-4D2A-A287-DCB62D5A9FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3766676-D452-4475-9D67-323B4159AF56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3766676-D452-4475-9D67-323B4159AF56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3766676-D452-4475-9D67-323B4159AF56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3766676-D452-4475-9D67-323B4159AF56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A7F40E10-FC8E-4D2A-A287-DCB62D5A9FD0} = {1FC8B6A8-36DD-4EA0-A2F7-4FA86F81BAD0}
+		{0CB98EFA-D076-46E7-A1EA-2BD63A6E878C} = {1FC8B6A8-36DD-4EA0-A2F7-4FA86F81BAD0}
+		{C3766676-D452-4475-9D67-323B4159AF56} = {0CB98EFA-D076-46E7-A1EA-2BD63A6E878C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E0ABD67-BA8E-4EE5-8243-7BC2F4CA434C}
