@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.UI", "01.UI", "{1FC8B6A8-36DD-4EA0-A2F7-4FA86F81BAD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Interface", "02.Interface", "{939D8E00-C109-4686-A4E6-313CBACEA187}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Services", "03.Services", "{0E5609CB-7A6B-45A6-9D67-6378C58D862E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alioss.Client.App", "Alioss.Client.App\Alioss.Client.App.csproj", "{A7F40E10-FC8E-4D2A-A287-DCB62D5A9FD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7F40E10-FC8E-4D2A-A287-DCB62D5A9FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7F40E10-FC8E-4D2A-A287-DCB62D5A9FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7F40E10-FC8E-4D2A-A287-DCB62D5A9FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7F40E10-FC8E-4D2A-A287-DCB62D5A9FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A7F40E10-FC8E-4D2A-A287-DCB62D5A9FD0} = {1FC8B6A8-36DD-4EA0-A2F7-4FA86F81BAD0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E0ABD67-BA8E-4EE5-8243-7BC2F4CA434C}
+	EndGlobalSection
+EndGlobal
