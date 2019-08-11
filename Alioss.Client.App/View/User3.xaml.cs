@@ -13,28 +13,30 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Alioss.Client.App
+namespace Alioss.Client.App.View
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// User3.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class User3 : UserControl
     {
-        public MainWindow()
+        public User3()
         {
             InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        public void initMenu()
         {
-            AddControl();
+
+            //   menulist.DataContext ="";
         }
 
-        private void AddControl()
+        private void Menu_Click(object sender, RoutedEventArgs e)
         {
-            main.Children.Clear();
-            main.Children.Add(new View.zxi());
-
+            //获取点击的对象
+            Button button = sender as Button;
+            if (button != null)
+            { }
         }
     }
 }

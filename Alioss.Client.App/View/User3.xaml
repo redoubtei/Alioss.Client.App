@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="Alioss.Client.App.View.User3"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Alioss.Client.App.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="734" d:DesignWidth="1280" >
+    <Grid Width="1280" Height="734">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Width="1280" Height="734" Source="/111.Client.Resource;component/Images/bg.png"/>
+        <Grid  Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="614"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <TextBlock Name="txtName" Text="222222" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#C93A34" FontSize="42"/>
+                <TextBlock Grid.Row="1" Text="11111" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#09253D" FontSize="30"/>
+            </Grid>
+            <Grid Grid.Row="1" Width="1135" Height="550" VerticalAlignment="Center">
+                <ListBox x:Name="menulist" ItemsSource="{Binding}" BorderThickness="0" Background="Transparent" Height="540" Width="1135">
+                    <ListBox.Resources>
+                        <Attr:UniformGridRowColConver x:Key="RowColConver"/>
+                    </ListBox.Resources>
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <UniformGrid   Background="Transparent"   Rows="{Binding ElementName=menulist,Path=ItemsSource,Converter={StaticResource RowColConver},Mode=OneWay}"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Button Height="161" Width="320"                                       
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    Style="{StaticResource top_menubtn_style}" 
+                                    Attr:AttrExtend.TitleFontSize="30" 
+                                    Attr:AttrExtend.DescFontSize="30"
+                                    Attr:AttrExtend.TitleAlignment="Center"
+                                    Attr:AttrExtend.DescAlignment="Center"
+                                    Attr:AttrExtend.DescTextAlignment="Center"
+                                    Attr:AttrExtend.IsNotShowIcon="true"
+                                    Content="{Binding}"                             
+                                    Click="Menu_Click"
+                                    ></Button>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                    <!-- 模板设计 内容居中 选中背景色透明 -->
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <!-- 设置控件模板 -->
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="ListBoxItem">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center"
+                                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                TextBlock.Foreground="{TemplateBinding Foreground}"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+
+                            <!-- 设置触发器 -->
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="true">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                                <Trigger Property="IsMouseOver" Value="true">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                </ListBox>
+
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

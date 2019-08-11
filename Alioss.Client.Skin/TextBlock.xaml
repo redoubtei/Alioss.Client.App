@@ -5,7 +5,7 @@
              xmlns:local="clr-namespace:Alioss.Client.Skin">
     <!-- 文字图标 -->
     <Style x:Key="IconFont" TargetType="{x:Type TextBlock}">
-        <Setter Property="FontFamily" Value="pack://application:,,,/SCX.Client.Skin;component/#fontello"/>
+        <Setter Property="FontFamily" Value="pack://application:,,,/aaa.Client.Skin;component/#fontello"/>
         <Setter Property="TextAlignment" Value="Center"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="FontSize" Value="{Binding FontSize}"/>

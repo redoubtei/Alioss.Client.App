@@ -4,9 +4,71 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Alioss.Client.App"
+        Height="1024" Width="1280" WindowStyle="None"
+        WindowStartupLocation="CenterScreen"  
+        AllowsTransparency="False" WindowState="Maximized" 
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Loaded="Window_Loaded" >
+    <Grid Name="mianGrid"  Width="1280px" Height="1024px" >
+        <DockPanel LastChildFill="True" Name="dpMain">
+            <DockPanel  DockPanel.Dock="Top" Height="115" Background="BurlyWood">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="105"/>
+                        <ColumnDefinition Width="365"/>
+                        <ColumnDefinition Width="360"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--<Image Source="/aaa.Client.Resource;component/Images/logo.png" Width="52" Height="70" HorizontalAlignment="Right"/>-->
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="1111" FontSize="24" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="#09253D"/>
+                        <TextBlock Grid.Row="1" Text="999999" FontSize="12" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="#09253D"/>
+                    </Grid>
+                    <!--<Image Grid.Column="2" Source="/aaa.Client.Resource;component/Images/tx.png" TouchDown="imgTitle_TouchDown" MouseDown="imgTitle_MouseDown"/>-->
+                    <Grid Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="2222" Foreground="#FFFFFF" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"  />
+                        <TextBlock Grid.Row="1" Text="2018年01月25日 星期四 14:25" VerticalAlignment="Center" HorizontalAlignment="Center" Name="toptime" FontSize="18" Foreground="#FFFFFF" />
+                    </Grid>
+                    <Grid Grid.Column="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <!--<Image  Source="/aaa.Client.Resource;component/Images/gh.png" Height="41" Width="200" HorizontalAlignment="Right" Margin="0,0,30,0" VerticalAlignment="Bottom"/>-->
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="140"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="33333" Foreground="#09253D" FontSize="18"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                            <TextBlock Name="txtComputerId" Grid.Column="1" Text="" Foreground="#D4605C" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </DockPanel>
+            <Grid Name="BottomGrid" Background="Plum" DockPanel.Dock="Bottom" Height="180">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="0"/>
+                    <RowDefinition Height="110"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" >
+                    <TextBlock Text="99999"></TextBlock>
+                </Grid>
+            </Grid>
+            <Grid Name="main" >
+
+            </Grid>
+        </DockPanel>
+
+
     </Grid>
 </Window>
